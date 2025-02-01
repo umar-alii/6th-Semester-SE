@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Reach Me Out</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="profile.jpg" alt="Your Name">
+            <p>Hi, I'm Umar Ali. I am a passionate Software Engineering Student with a strong background in Python, Java and Machine Learning. I love solving problems and creating innovative solutions.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <img src="psccw.jpg" alt="Matric School">
+            <h3>Matric</h3>
+            <p>School: Pakistan Scouts Cadet College Batrasi</p>
+            <p>Marks: 997</p>
+        </div>
+        <div class="education-item">
+            <img src="psccb.jpg" alt="FSc School">
+            <h3>FSc Pre Engineering</h3>
+            <p>School: Pakistan Scouts Cadet College Batrasi</p>
+            <p>Marks: 982</p>
+        </div>
+        <div class="education-item">
+            <img src="paf.jpeg" alt="BS School">
+            <h3>BS Software Engineering</h3>
+            <p>University: PAF-IAST</p>
+            <p>CGPA: 3.4</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Databases</li>
+            <li>Node.js</li>
+            <li>Spring Framework</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Network Intrusion Detection</h3>
+            <p>NIDS is a Machine Learning based solution to catch anomly packets received by device on Network</p>
+        </div>
+        <div class="project-item">
+            <h3>Blockchain Based Machine Learning Model and Datasets Deployment Platform</h3>
+            <p>A Decentralized Platform where users can deploy their ML Models and store datasets in more secure way</p>
+        </div>
+        <div class="project-item">
+            <h3>Chat App</h3>
+            <p>This Application allows users to send messages from one device to another while staying connected to Internet</p>
+        </div>
+    </section>
+    <h1 style="text-align: center; font-weight: bold;">Reach Me Out</h1>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        
+        <p>Email: <a href="mailto:umarrali.pk@gmail.com">umarrali.pk@gmail.com</a></p>
+    
+        <div class="contact-links">
+            <a href="https://wa.me/+923175955869" target="_blank" class="contact-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Logo">
+                <span>WhatsApp</span>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/umarrali" target="_blank" class="contact-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo">
+                <span>LinkedIn</span>
+            </a>
+    
+            <a href="https://github.com/umar-alii" target="_blank" class="contact-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo">
+                <span>GitHub</span>
+            </a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+          <p>If you'd like to get in touch, feel free to reach out!</p>
+          <form id="contact-form" action="https://formspree.io/f/xkgoboqq" method="POST">
+            <div>
+              <input type="text" id="user_name" name="name" placeholder="Your Name" required />
+            </div>
+            <div>
+              <input type="email" id="user_email" name="email" placeholder="Your Email" required />
+            </div>
+            <div>
+              <textarea id="user_message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+        </section>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Umar Ali. All rights reserved.</p>
+    </footer>
+</body>
+</html>
