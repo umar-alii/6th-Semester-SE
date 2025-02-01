@@ -1,1 +1,6 @@
+Lab1 Tasks
 
+Find Largest number using java 
+Reverse the string in Java
+Find Smallest number in Java
+Write a Java Code to Print the mathematical table of given number from 1-10
