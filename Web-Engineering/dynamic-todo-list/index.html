@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <script defer src="index.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background: #f8f9fa;
+        }
+        #todo-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        input {
+            width: 70%;
+            padding: 8px;
+        }
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        #addBtn {
+            background: #28a745;
+            color: white;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px;
+        }
+        li:hover {
+            background: #e2e6ea;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .btn {
+            margin-left: 10px;
+            padding: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+        }
+        .completeBtn {
+            background: #007bff;
+            color: white;
+        }
+        .deleteBtn {
+            background: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple To-Do List</h2>
+    <div id="todo-container">
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button id="addBtn">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+</body>
+</html>
