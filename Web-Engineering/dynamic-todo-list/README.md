@@ -5,7 +5,6 @@
 
 A lightweight, browser-based to-do list application built with vanilla JavaScript. Manage your daily tasks with this simple, intuitive interface.
 
-![Simple To-Do List App](https://via.placeholder.com/500x300?text=To-Do+List+App)
 
 ## Features
 
