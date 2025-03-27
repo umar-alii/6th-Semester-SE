@@ -9,7 +9,6 @@ A simple web application that allows users to browse countries one at a time usi
 
 ## Technologies Used
 - **HTML** for structuring the webpage.
-- **CSS** for basic styling.
 - **JavaScript (Fetch API)** for fetching and displaying country data dynamically.
 
 ## Installation & Usage
