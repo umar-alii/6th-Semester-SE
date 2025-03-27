@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Country Viewer</title>
+    <style>
+        table { width: 50%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid black; padding: 10px; text-align: center; }
+        img { border: 1px solid #ddd; border-radius: 5px; }
+        button { margin: 10px; padding: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Country Viewer</h2>
+    <button onclick="prevCountry()">Previous</button>
+    <button onclick="nextCountry()">Next</button>
+
+    <table id="countryTable">
+        <thead>
+            <tr>
+                <th>Flag</th>
+                <th>Name</th>
+                <th>Capital</th>
+                <th>Population</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
