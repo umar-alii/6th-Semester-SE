@@ -15,26 +15,35 @@ try {
     $pdo = new PDO($dsn, $user, $pass, $options);
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $required_fields = ['faculty', 'subject', 'topics', 'content_delivery_method', 
+                          'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8'];
+        
+        foreach ($required_fields as $field) {
+            if (!isset($_POST[$field])) {
+                die("Error: Missing required field - $field");
+            }
+        }
+        
         $stmt = $pdo->prepare("
-            INSERT INTO feedback (
-                faculty, subject, topics, delivery_method,
-                q1, q2, q3, q4, q5, q6, q7, q8
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ");
+    INSERT INTO feedback (
+        faculty, subject, topics, content_delivery_method,
+        q1, q2, q3, q4, q5, q6, q7, q8
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+");
 
         $stmt->execute([
-            $_POST['faculty'],
-            $_POST['subject'],
-            $_POST['topics'],
-            $_POST['delivery_method'],
-            $_POST['q1'],
-            $_POST['q2'],
-            $_POST['q3'],
-            $_POST['q4'],
-            $_POST['q5'],
-            $_POST['q6'],
-            $_POST['q7'],
-            $_POST['q8'],
+            htmlspecialchars($_POST['faculty']),
+            htmlspecialchars($_POST['subject']),
+            htmlspecialchars($_POST['topics']),
+            htmlspecialchars($_POST['content_delivery_method']),
+            htmlspecialchars($_POST['q1']),
+            htmlspecialchars($_POST['q2']),
+            htmlspecialchars($_POST['q3']),
+            htmlspecialchars($_POST['q4']),
+            htmlspecialchars($_POST['q5']),
+            htmlspecialchars($_POST['q6']),
+            htmlspecialchars($_POST['q7']),
+            htmlspecialchars($_POST['q8'])
         ]);
 
         echo "Feedback submitted successfully!<br><a href='view.php'>View Feedback</a>";
