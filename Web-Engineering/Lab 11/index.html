@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Survey Feedback Form</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <h2 style="text-align:center">Pak Austria Fachhochschule Institute of Applied Science and Technology</h2>
+    <h3 style="text-align:center">School of Computing Sciences</h3>
+
+    <form action="process.php" method="POST">
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Feedback Form</th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Select Faculty</td>
+                <td>
+                    <select name="faculty">
+                        <option value="">-- Select Faculty --</option>
+                        <option>Syed Adil Ibrar</option>
+                        <option>Malik Nabeel Ahmed</option>
+                        <option>Adnan Shah</option>
+                        <option>Asif Khan</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Select Subject Name</td>
+                <td>
+                    <select name="subject">
+                        <option value="">-- Select Subject --</option>
+                        <option>Computer Networks</option>
+                        <option>Database Systems</option>
+                        <option>Operating Systems</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Please enter the topics covered</td>
+                <td><input type="text" name="topics" placeholder="Enter topics covered"></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Select the Content Delivery Method</td>
+                <td>
+                    <select name="delivery_method">
+                        <option value="">-- Select Method --</option>
+                        <option>Presentation</option>
+                        <option>Practical Implementation</option>
+                        <option>Projects</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><b>For the following questions enter the rating value (Excellent = 3, Good = 2, Poor = 1)</b></td>
+            </tr>
+
+            
+            <tr><td>5</td><td>On-time to class</td><td><select name="q1"><option value="">-- Rate --</option><option>3</option><option>2</option><option>1</option></select></td></tr>
+            <tr><td>6</td><td>Well prepared for the class</td><td><select name="q2"><option value="">-- Rate --</option><option>3</option><option>2</option><option>1</option></select></td></tr>
+            <tr><td>7</td><td>Communicates only in English</td><td><select name="q3"><option value="">-- Rate --</option><option>3</option><option>2</option><option>1</option></select></td></tr>
+            <tr><td>8</td><td>Explains the topics clearly</td><td><select name="q4"><option value="">-- Rate --</option><option>3</option><option>2</option><option>1</option></select></td></tr>
+            <tr><td>9</td><td>Integrate the topics with real-world applications</td><td><select name="q5"><option value="">-- Rate --</option><option>3</option><option>2</option><option>1</option></select></td></tr>
+            <tr><td>10</td><td>Makes the classroom very lively and interesting</td><td><select name="q6"><option value="">-- Rate --</option><option>3</option><option>2</option><option>1</option></select></td></tr>
+            <tr><td>11</td><td>Interaction with the students</td><td><select name="q7"><option value="">-- Rate --</option><option>3</option><option>2</option><option>1</option></select></td></tr>
+            <tr><td>12</td><td>Your experience with the content delivery method</td><td><select name="q8"><option value="">-- Rate --</option><option>3</option><option>2</option><option>1</option></select></td></tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    <script src="assets/script.js"></script>
+</body>
+</html>
