@@ -18,11 +18,13 @@ This web application provides a teacher survey feedback system for Pak Austria F
 ![Feedback Form Interface](index.png)
 *The main interface where users can submit their feedback*
 
+![Database Storage](proces.png)
+*Where data is sotored in Database*
+
 ![Feedback Results](view.png)
 *The view displaying all submitted feedback entries*
 
-![Database Storage](process.png)
-*How the feedback data is stored in the database*
+
 
 
 ## File Structure
