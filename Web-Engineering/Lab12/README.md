@@ -1,6 +1,6 @@
 # 🔐 Secure PHP Authentication System
 
-This project is a clean and secure user authentication system built in **pure PHP**. It includes best practices like session hardening, CSRF protection, rate limiting, and password hashing — all without external libraries.
+This project is a clean and secure user authentication system built in **PHP**. It includes best practices like session hardening, CSRF protection, rate limiting, and password hashing — all without external libraries.
 
 ---
 
@@ -17,7 +17,7 @@ This project is a clean and secure user authentication system built in **pure PH
 ---
 
 
-## 🛠 Setup Instructions
+## Setup Instructions
 
 ### 1. Download or Clone
 
@@ -26,7 +26,7 @@ Or manually download and place the folder in `htdocs/` (if using XAMPP).
 
 ---
 
-### 2. ⚙️ Create the MySQL Database
+### 2. Create the MySQL Database
 
 Run this SQL:
 ```sql
