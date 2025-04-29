@@ -1,0 +1,3 @@
+127.0.0.1 - - [29/Apr/2025:04:32:15 +0000] "GET /dvwa/vulnerabilities/sqli/?id=1%27%20OR%20%271%27=%271&Submit=Submit HTTP/1.1" 403 5364 "https://localhost/dvwa/vulnerabilities/sqli/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" - 0/296 1465 3 1470 20 0
+
+127.0.0.1 - - [29/Apr/2025:04:33:42 +0000] "GET /dvwa/vulnerabilities/xss_r/?name=%3Cscript%3Ealert%28%27XSS%21%27%29%3C%2Fscript%3E HTTP/1.1" 403 4932 "https://localhost/dvwa/vulnerabilities/xss_r/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" - 0/184 1102 3 1109 15 0
